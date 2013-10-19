@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A35A5F33-6A7B-4CC7-8625-FB5C8743B705}</ProjectGuid>
+    <RootNamespace>Net</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\Lib\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>..\Lib\$(Configuration)\InterMediate\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetExt>.Lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>__WINDOWS__;WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>.;.\;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="dhkey.h" />
+    <ClInclude Include="Encoder.h" />
+    <ClInclude Include="EncoderManager.h" />
+    <ClInclude Include="Encoder_XOR.h" />
+    <ClInclude Include="MsgPack\msgpack.h" />
+    <ClInclude Include="MsgPack\msgpack.hpp" />
+    <ClInclude Include="MsgPack\msgpack\object.h" />
+    <ClInclude Include="MsgPack\msgpack\object.hpp" />
+    <ClInclude Include="MsgPack\msgpack\pack.h" />
+    <ClInclude Include="MsgPack\msgpack\pack.hpp" />
+    <ClInclude Include="MsgPack\msgpack\pack_define.h" />
+    <ClInclude Include="MsgPack\msgpack\pack_template.h" />
+    <ClInclude Include="MsgPack\msgpack\sbuffer.h" />
+    <ClInclude Include="MsgPack\msgpack\sbuffer.hpp" />
+    <ClInclude Include="MsgPack\msgpack\sysdep.h" />
+    <ClInclude Include="MsgPack\msgpack\type.hpp" />
+    <ClInclude Include="MsgPack\msgpack\type\bool.hpp" />
+    <ClInclude Include="MsgPack\msgpack\type\define.hpp" />
+    <ClInclude Include="MsgPack\msgpack\type\deque.hpp" />
+    <ClInclude Include="MsgPack\msgpack\type\fixint.hpp" />
+    <ClInclude Include="MsgPack\msgpack\type\float.hpp" />
+    <ClInclude Include="MsgPack\msgpack\type\int.hpp" />
+    <ClInclude Include="MsgPack\msgpack\type\list.hpp" />
+    <ClInclude Include="MsgPack\msgpack\type\map.hpp" />
+    <ClInclude Include="MsgPack\msgpack\type\nil.hpp" />
+    <ClInclude Include="MsgPack\msgpack\type\pair.hpp" />
+    <ClInclude Include="MsgPack\msgpack\type\raw.hpp" />
+    <ClInclude Include="MsgPack\msgpack\type\set.hpp" />
+    <ClInclude Include="MsgPack\msgpack\type\string.hpp" />
+    <ClInclude Include="MsgPack\msgpack\type\tr1\unordered_map.hpp" />
+    <ClInclude Include="MsgPack\msgpack\type\tr1\unordered_set.hpp" />
+    <ClInclude Include="MsgPack\msgpack\type\tuple.hpp" />
+    <ClInclude Include="MsgPack\msgpack\type\vector.hpp" />
+    <ClInclude Include="MsgPack\msgpack\unpack.h" />
+    <ClInclude Include="MsgPack\msgpack\unpack.hpp" />
+    <ClInclude Include="MsgPack\msgpack\unpack_define.h" />
+    <ClInclude Include="MsgPack\msgpack\unpack_template.h" />
+    <ClInclude Include="MsgPack\msgpack\version.h" />
+    <ClInclude Include="MsgPack\msgpack\vrefbuffer.h" />
+    <ClInclude Include="MsgPack\msgpack\vrefbuffer.hpp" />
+    <ClInclude Include="MsgPack\msgpack\zbuffer.h" />
+    <ClInclude Include="MsgPack\msgpack\zbuffer.hpp" />
+    <ClInclude Include="MsgPack\msgpack\zone.h" />
+    <ClInclude Include="MsgPack\msgpack\zone.hpp" />
+    <ClInclude Include="Packet.h" />
+    <ClInclude Include="PacketFactoryManager.h" />
+    <ClInclude Include="ServerSocket.h" />
+    <ClInclude Include="Socket.h" />
+    <ClInclude Include="SocketAPI.h" />
+    <ClInclude Include="SocketInputStream.h" />
+    <ClInclude Include="SocketOutputStream.h" />
+    <ClInclude Include="Stub.h" />
+    <ClInclude Include="StubManager.h" />
+    <ClInclude Include="StubPool.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dhkey.cpp" />
+    <ClCompile Include="EncoderManager.cpp" />
+    <ClCompile Include="Encoder_XOR.cpp" />
+    <ClCompile Include="MsgPack\object.cpp" />
+    <ClCompile Include="MsgPack\objectc.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="MsgPack\unpack.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="MsgPack\version.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="MsgPack\vrefbuffer.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="MsgPack\zone.c">
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="Packet.cpp" />
+    <ClCompile Include="PacketFactoryManager.cpp" />
+    <ClCompile Include="ServerSocket.cpp" />
+    <ClCompile Include="Socket.cpp" />
+    <ClCompile Include="SocketAPI.cpp" />
+    <ClCompile Include="SocketInputStream.cpp" />
+    <ClCompile Include="SocketOutputStream.cpp" />
+    <ClCompile Include="Stub.cpp" />
+    <ClCompile Include="StubManager.cpp" />
+    <ClCompile Include="StubPool.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

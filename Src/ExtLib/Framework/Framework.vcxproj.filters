@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="GApp.h" />
+    <ClInclude Include="GSystem.h" />
+    <ClInclude Include="Event\Event.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+    <ClInclude Include="Event\EventManager.h">
+      <Filter>Event</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GApp.cpp" />
+    <ClCompile Include="GSystem.cpp" />
+    <ClCompile Include="Event\Event.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+    <ClCompile Include="Event\EventManager.cpp">
+      <Filter>Event</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Event">
+      <UniqueIdentifier>{80d0d778-7e9a-4a53-9c33-e88a86f8a92b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

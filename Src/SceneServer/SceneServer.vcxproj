@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{ED9389C6-1CAC-463D-ACDC-6352F03E611D}</ProjectGuid>
+    <RootNamespace>ServerScene</RootNamespace>
+    <ProjectName>SceneServer</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\Bin\$(Configuration)\</OutDir>
+    <IntDir>..\..\Bin\$(Configuration)\InterMediate\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\;..\ExtLib\;..\Common\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__WINDOWS__;_WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;ws2_32.lib;..\ExtLib\Lib\$(Configuration)\Utility.Lib;..\ExtLib\Lib\$(Configuration)\Net.Lib;..\ExtLib\Lib\$(Configuration)\Framework.Lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="ConfigSystem\ConfigSystem.cpp" />
+    <ClCompile Include="Helper\FileHelper.cpp" />
+    <ClCompile Include="MotionSystem\MotionInput.cpp" />
+    <ClCompile Include="MotionSystem\MotionSystem.cpp" />
+    <ClCompile Include="Obj\Obj.cpp" />
+    <ClCompile Include="PlayerSystem\Player.cpp" />
+    <ClCompile Include="PlayerSystem\PlayerManager.cpp" />
+    <ClCompile Include="PlayerSystem\PlayerPool.cpp" />
+    <ClCompile Include="PlayerSystem\PlayerSystem.cpp" />
+    <ClCompile Include="SceneServer.cpp" />
+    <ClCompile Include="SceneSystem\Scene.cpp" />
+    <ClCompile Include="SceneSystem\SceneSystem.cpp" />
+    <ClCompile Include="SkillSystem\SkillSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConfigSystem\ConfigSystem.h" />
+    <ClInclude Include="Define\DefineProtocol.h" />
+    <ClInclude Include="Define\PrestrainFile\BirthPlace.h" />
+    <ClInclude Include="Define\PrestrainFile\PlayerProperty.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\BaseConfig.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\EnumConfig.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\PacketDefine.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\PacketDefine_Action.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\PacketDefine_Buffer.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\PacketDefine_CloseConnect.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\PacketDefine_Connect.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\PacketDefine_Create.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\PacketDefine_Move.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\PacketDefine_Skill.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\PacketDefine_Status.h" />
+    <ClInclude Include="Define\PrestrainFile\Skill.h" />
+    <ClInclude Include="Define\ProtocolDefine.h" />
+    <ClInclude Include="Define\SystemDefine.h" />
+    <ClInclude Include="Helper\FileHelper.h" />
+    <ClInclude Include="MotionSystem\MotionInput.h" />
+    <ClInclude Include="MotionSystem\MotionSystem.h" />
+    <ClInclude Include="Obj\Obj.h" />
+    <ClInclude Include="PlayerSystem\Player.h" />
+    <ClInclude Include="PlayerSystem\PlayerManager.h" />
+    <ClInclude Include="PlayerSystem\PlayerPool.h" />
+    <ClInclude Include="PlayerSystem\PlayerSystem.h" />
+    <ClInclude Include="SceneServer.h" />
+    <ClInclude Include="SceneSystem\Scene.h" />
+    <ClInclude Include="SceneSystem\SceneSystem.h" />
+    <ClInclude Include="SkillSystem\SkillSystem.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

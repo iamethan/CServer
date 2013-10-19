@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{2b216148-94e3-4c1c-8158-49ab9a8c7806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Player">
+      <UniqueIdentifier>{39933a7f-50c2-43d9-b159-4befe41caf41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Config">
+      <UniqueIdentifier>{a6d83af3-8af3-4f38-aa98-89c9ca0447b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Define">
+      <UniqueIdentifier>{11c74ef8-68e0-4467-8b10-7934dfd4fab2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Packets">
+      <UniqueIdentifier>{3c3f6a21-bfff-4bce-88ed-401c1213216c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Thread">
+      <UniqueIdentifier>{aebe7ce2-bdc7-4acb-bc43-6bcb71f4ead3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Log">
+      <UniqueIdentifier>{87c16fdd-dee1-4128-b270-7e85e3b04f93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Packets\Handle">
+      <UniqueIdentifier>{98e74190-9c43-49f0-be64-1334df5286d2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Player\Player.cpp">
+      <Filter>Common\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Config\Config.cpp">
+      <Filter>Common\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Packets\PacketFactoryManager.cpp">
+      <Filter>Common\Packets</Filter>
+    </ClCompile>
+    <ClCompile Include="Define\GameUtil.cpp">
+      <Filter>Common\Define</Filter>
+    </ClCompile>
+    <ClCompile Include="Packets\PacketHandle.cpp">
+      <Filter>Common\Packets\Handle</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Player\Player.h">
+      <Filter>Common\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Config\Config.h">
+      <Filter>Common\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="Define\GameDefine.h">
+      <Filter>Common\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Define\FileDef.h">
+      <Filter>Common\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Packets\PacketFactoryManager.h">
+      <Filter>Common\Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Define\LogDefine.h">
+      <Filter>Common\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Define\PlayerStatus.h">
+      <Filter>Common\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Define\GameUtil.h">
+      <Filter>Common\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Define\GameStruct.h">
+      <Filter>Common\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Define\GameDefine_Attr.h">
+      <Filter>Common\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Define\GameDefine_Result.h">
+      <Filter>Common\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Packets\BasePackets.h">
+      <Filter>Common\Packets</Filter>
+    </ClInclude>
+    <ClInclude Include="Packets\PacketHandle.h">
+      <Filter>Common\Packets\Handle</Filter>
+    </ClInclude>
+    <ClInclude Include="Packets\CS_PACK.h">
+      <Filter>Common\Packets</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

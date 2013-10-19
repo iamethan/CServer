@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="SceneServer.cpp" />
+    <ClCompile Include="PlayerSystem\PlayerSystem.cpp">
+      <Filter>PlayerSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerSystem\Player.cpp">
+      <Filter>PlayerSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerSystem\PlayerManager.cpp">
+      <Filter>PlayerSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Obj\Obj.cpp">
+      <Filter>Obj</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneSystem\SceneSystem.cpp">
+      <Filter>SceneSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerSystem\PlayerPool.cpp">
+      <Filter>PlayerSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneSystem\Scene.cpp">
+      <Filter>SceneSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="MotionSystem\MotionSystem.cpp">
+      <Filter>MotionSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="MotionSystem\MotionInput.cpp">
+      <Filter>MotionSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigSystem\ConfigSystem.cpp" />
+    <ClCompile Include="Helper\FileHelper.cpp" />
+    <ClCompile Include="SkillSystem\SkillSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="PlayerSystem">
+      <UniqueIdentifier>{08e5a914-d4cb-4f2e-9df3-eb8ffb4e0517}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SceneSystem">
+      <UniqueIdentifier>{a905f9de-c805-4bad-92c5-05b465581d25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Define">
+      <UniqueIdentifier>{e5578c32-5da8-4a57-8167-3d7734bc8f0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Obj">
+      <UniqueIdentifier>{f2bab9b1-51e9-4fb7-beaa-8883cb3332fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MotionSystem">
+      <UniqueIdentifier>{52eef239-1a35-48b9-8270-a1af8f64f614}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AISystem">
+      <UniqueIdentifier>{bb59b58e-db75-4e98-9b43-720f9fcb8fec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ItemSystem">
+      <UniqueIdentifier>{c9664edd-b5a1-41f3-9206-115053ff7015}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="QuestSystem">
+      <UniqueIdentifier>{a206c867-6134-4a27-9b0a-919585e86572}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="SceneServer.h" />
+    <ClInclude Include="PlayerSystem\PlayerSystem.h">
+      <Filter>PlayerSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Define\SystemDefine.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerSystem\Player.h">
+      <Filter>PlayerSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerSystem\PlayerManager.h">
+      <Filter>PlayerSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Obj\Obj.h">
+      <Filter>Obj</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSystem\SceneSystem.h">
+      <Filter>SceneSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerSystem\PlayerPool.h">
+      <Filter>PlayerSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSystem\Scene.h">
+      <Filter>SceneSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="MotionSystem\MotionSystem.h">
+      <Filter>MotionSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="MotionSystem\MotionInput.h">
+      <Filter>MotionSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Define\PrestrainFile\Protocol\BaseConfig.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\PacketDefine_Status.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\EnumConfig.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\PacketDefine.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\PacketDefine_Action.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\PacketDefine_Buffer.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\PacketDefine_CloseConnect.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\PacketDefine_Connect.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\PacketDefine_Create.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\PacketDefine_Move.h" />
+    <ClInclude Include="Define\PrestrainFile\Protocol\PacketDefine_Skill.h" />
+    <ClInclude Include="Define\PrestrainFile\BirthPlace.h" />
+    <ClInclude Include="Define\PrestrainFile\Skill.h" />
+    <ClInclude Include="Define\PrestrainFile\PlayerProperty.h" />
+    <ClInclude Include="ConfigSystem\ConfigSystem.h" />
+    <ClInclude Include="Helper\FileHelper.h" />
+    <ClInclude Include="SkillSystem\SkillSystem.h" />
+    <ClInclude Include="Define\DefineProtocol.h" />
+    <ClInclude Include="Define\ProtocolDefine.h" />
+  </ItemGroup>
+</Project>

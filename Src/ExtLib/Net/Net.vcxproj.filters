@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="dhkey.h" />
+    <ClInclude Include="Encoder.h" />
+    <ClInclude Include="EncoderManager.h" />
+    <ClInclude Include="Packet.h" />
+    <ClInclude Include="ServerSocket.h" />
+    <ClInclude Include="Socket.h" />
+    <ClInclude Include="SocketAPI.h" />
+    <ClInclude Include="SocketInputStream.h" />
+    <ClInclude Include="SocketOutputStream.h" />
+    <ClInclude Include="Encoder_XOR.h" />
+    <ClInclude Include="MsgPack\msgpack.h">
+      <Filter>MsgPack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack.hpp">
+      <Filter>MsgPack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\object.h">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\object.hpp">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\pack.h">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\pack.hpp">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\pack_define.h">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\pack_template.h">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\sbuffer.h">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\sbuffer.hpp">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\sysdep.h">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\type.hpp">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\unpack.h">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\unpack.hpp">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\unpack_define.h">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\unpack_template.h">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\version.h">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\vrefbuffer.h">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\vrefbuffer.hpp">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\zbuffer.h">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\zbuffer.hpp">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\zone.h">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\zone.hpp">
+      <Filter>MsgPack\msgpack</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\type\bool.hpp">
+      <Filter>MsgPack\msgpack\type</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\type\define.hpp">
+      <Filter>MsgPack\msgpack\type</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\type\deque.hpp">
+      <Filter>MsgPack\msgpack\type</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\type\fixint.hpp">
+      <Filter>MsgPack\msgpack\type</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\type\float.hpp">
+      <Filter>MsgPack\msgpack\type</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\type\int.hpp">
+      <Filter>MsgPack\msgpack\type</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\type\list.hpp">
+      <Filter>MsgPack\msgpack\type</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\type\map.hpp">
+      <Filter>MsgPack\msgpack\type</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\type\nil.hpp">
+      <Filter>MsgPack\msgpack\type</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\type\pair.hpp">
+      <Filter>MsgPack\msgpack\type</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\type\raw.hpp">
+      <Filter>MsgPack\msgpack\type</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\type\set.hpp">
+      <Filter>MsgPack\msgpack\type</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\type\string.hpp">
+      <Filter>MsgPack\msgpack\type</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\type\tuple.hpp">
+      <Filter>MsgPack\msgpack\type</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\type\vector.hpp">
+      <Filter>MsgPack\msgpack\type</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\type\tr1\unordered_map.hpp">
+      <Filter>MsgPack\msgpack\type\tr1</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgPack\msgpack\type\tr1\unordered_set.hpp">
+      <Filter>MsgPack\msgpack\type\tr1</Filter>
+    </ClInclude>
+    <ClInclude Include="Stub.h" />
+    <ClInclude Include="StubPool.h" />
+    <ClInclude Include="StubManager.h" />
+    <ClInclude Include="PacketFactoryManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dhkey.cpp" />
+    <ClCompile Include="EncoderManager.cpp" />
+    <ClCompile Include="ServerSocket.cpp" />
+    <ClCompile Include="Socket.cpp" />
+    <ClCompile Include="SocketAPI.cpp" />
+    <ClCompile Include="SocketInputStream.cpp" />
+    <ClCompile Include="SocketOutputStream.cpp" />
+    <ClCompile Include="Encoder_XOR.cpp" />
+    <ClCompile Include="MsgPack\object.cpp">
+      <Filter>MsgPack</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgPack\objectc.c">
+      <Filter>MsgPack</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgPack\unpack.c">
+      <Filter>MsgPack</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgPack\version.c">
+      <Filter>MsgPack</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgPack\vrefbuffer.c">
+      <Filter>MsgPack</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgPack\zone.c">
+      <Filter>MsgPack</Filter>
+    </ClCompile>
+    <ClCompile Include="Stub.cpp" />
+    <ClCompile Include="StubPool.cpp" />
+    <ClCompile Include="StubManager.cpp" />
+    <ClCompile Include="PacketFactoryManager.cpp" />
+    <ClCompile Include="Packet.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="MsgPack">
+      <UniqueIdentifier>{1e05d90c-48df-4700-b8fb-2e77b663d857}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MsgPack\msgpack">
+      <UniqueIdentifier>{1f330747-0aa3-4b41-9d46-a91078a0ed8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MsgPack\msgpack\type">
+      <UniqueIdentifier>{dab4adad-3f87-4736-a3b7-0152bf3c6005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MsgPack\msgpack\type\tr1">
+      <UniqueIdentifier>{933bcc47-edb6-479a-822f-e334ba52130f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

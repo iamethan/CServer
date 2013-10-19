@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="File.cpp" />
+    <ClCompile Include="Ini.cpp" />
+    <ClCompile Include="Thread.cpp" />
+    <ClCompile Include="TimeManager.cpp" />
+    <ClCompile Include="Assertx.cpp" />
+    <ClCompile Include="Chain.cpp" />
+    <ClCompile Include="GameUtil.cpp" />
+    <ClCompile Include="Minidump.cpp" />
+    <ClCompile Include="Rand.cpp" />
+    <ClCompile Include="Array_Base.inl" />
+    <ClCompile Include="FileAPI.cpp" />
+    <ClCompile Include="ThreadPool.cpp" />
+    <ClCompile Include="GTimer.cpp" />
+    <ClCompile Include="GLog.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="File.h" />
+    <ClInclude Include="Ini.h" />
+    <ClInclude Include="ObjPool.h" />
+    <ClInclude Include="Thread.h" />
+    <ClInclude Include="Array_Base.h" />
+    <ClInclude Include="Assertx.h" />
+    <ClInclude Include="BaseType.h" />
+    <ClInclude Include="Chain.h" />
+    <ClInclude Include="GameUtil.h" />
+    <ClInclude Include="Minidump.h" />
+    <ClInclude Include="Rand.h" />
+    <ClInclude Include="Type.h" />
+    <ClInclude Include="FileAPI.h" />
+    <ClInclude Include="InstanceManager.h" />
+    <ClInclude Include="ThreadPool.h" />
+    <ClInclude Include="GTimer.h" />
+    <ClInclude Include="TimeManager.h" />
+    <ClInclude Include="GLog.h" />
+    <ClInclude Include="IDGenerator.h" />
+    <ClInclude Include="BinFile.h" />
+  </ItemGroup>
+</Project>
